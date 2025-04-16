@@ -17,7 +17,7 @@ const SearchBar=()=>{
             return;
         }
         try{
-            const response=await axios.get(`https://weather-backend-orkf.onrender.com`);
+            const response=await axios.get(`https://weather-backend-orkf.onrender.com/weather?city=${city}`);
             setWeather(response.data);
         }
         catch(err){
